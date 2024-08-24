@@ -1,4 +1,4 @@
-const ws = new WebSocket('ws://localhost:3000');
+const ws = new WebSocket('wss://${window.location.host}');
 
 let tcpChart = new Chart(document.getElementById('tcpChart').getContext('2d'), {
   type: 'line',
