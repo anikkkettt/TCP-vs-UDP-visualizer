@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TCP vs UDP Visualizer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.4/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-8">
+  <h1 class="text-3xl font-bold mb-4 text-center">TCP vs UDP Visualizer</h1>
+
+  <div class="flex justify-center mb-8">
+    <button id="startSimulation" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4">Start Simulation</button>
+    <button id="stopSimulation" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Stop Simulation</button>
+  </div>
+
+  <div class="grid grid-cols-2 gap-4">
+    <div>
+      <h2 class="text-xl font-semibold mb-2">TCP Simulation</h2>
+      <canvas id="tcpChart"></canvas>
+      <p id="tcpConcept" class="mt-4 text-sm text-gray-700"></p>
+    </div>
+    <div>
+      <h2 class="text-xl font-semibold mb-2">UDP Simulation</h2>
+      <canvas id="udpChart"></canvas>
+      <p id="udpConcept" class="mt-4 text-sm text-gray-700"></p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
