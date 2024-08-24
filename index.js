@@ -1,4 +1,4 @@
-const ws = new WebSocket('ws://tcp-vs-udp-visualizer.vercel.app');
+const ws = new WebSocket('wss://tcp-vs-udp-visualizer.vercel.app');
 
 let tcpChart = new Chart(document.getElementById('tcpChart').getContext('2d'), {
   type: 'line',
